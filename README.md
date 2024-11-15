@@ -8,7 +8,7 @@ This project showcases the design and configuration of a secure Wireless Local A
 - [Network Design](#network-design)
 - [Device Configurations](#device-configurations)
 - [How to Use](#how-to-use)
-- [Authors](#authors)
+- [Team Members](#Team-Members)
 
 ---
 
@@ -66,6 +66,10 @@ For a detailed network diagram, refer to the `diagrams/` folder.
 
 ---
 
-## 👥 Authors
-- Ahmed Al Senaidi
-- Ahmed Al Khanbshi @Ah606med
+## 🧑‍🤝‍🧑 Team Members
+
+This project was completed as part of COMP4515: Mobile Networks at Sultan Qaboos University.
+
+- **[Ahmed Al Senaidi](https://github.com/ahmedAlsenaidi)**
+- **[Ahmed Al Khanbshi](https://github.com/Ah606med)**
+
