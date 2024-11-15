@@ -1,1 +1,43 @@
 
+---
+
+### **3. Core Switch Configuration (core_switch_config.txt)**
+```plaintext
+enable
+configure terminal
+# Create VLANs
+vlan 10
+name Management
+vlan 20
+name HR
+vlan 30
+name IT
+vlan 40
+name Trainees
+exit
+# Configure VLAN Interfaces with IP addresses
+interface Vlan10
+ ip address 10.10.10.1 255.255.255.0
+ no shutdown
+exit
+interface Vlan20
+ ip address 10.10.20.1 255.255.255.0
+ no shutdown
+exit
+interface Vlan30
+ ip address 10.10.30.1 255.255.255.0
+ no shutdown
+exit
+interface Vlan40
+ ip address 10.10.40.1 255.255.255.0
+ no shutdown
+exit
+# Set up trunk ports
+interface FastEthernet0/1
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30,40
+exit
+interface FastEthernet0/2
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30,40
+exit
