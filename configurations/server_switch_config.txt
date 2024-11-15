@@ -1,1 +1,26 @@
-
+enable
+configure terminal
+# Create VLANs
+vlan 10
+name Management
+vlan 20
+name HR
+vlan 30
+name IT
+vlan 40
+name Trainees
+exit
+# Trunk connection to Core Switch
+interface GigabitEthernet0/1
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30,40
+exit
+# Assign servers to VLANs
+interface FastEthernet0/1
+ switchport mode access
+ switchport access vlan 10
+exit
+interface FastEthernet0/2
+ switchport mode access
+ switchport access vlan 10
+exit
