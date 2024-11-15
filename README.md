@@ -63,3 +63,9 @@ For a detailed network diagram, refer to the `diagrams/` folder.
 - Trunk link for server communication.
 - Access links for DHCP and RADIUS servers.
 - Sample configuration file: [Server Switch Config](configurations/server_switch_config.txt)
+
+---
+
+## 👥 Authors
+- Ahmed Al Senaidi
+- Ahmed Al Khanbshi
